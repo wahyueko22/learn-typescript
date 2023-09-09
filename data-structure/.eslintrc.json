@@ -1,0 +1,27 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint"],
+    "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "rules": {
+        "indent": [
+            "error",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        // Place your custom rules here
+        // For example:
+        "no-console": "off", // Allowing console.log()
+        "no-unused-vars": "warn" // Warning for unused variables
+    }
+}
